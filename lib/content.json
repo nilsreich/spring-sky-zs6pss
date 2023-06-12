@@ -8,5 +8,16 @@
       "title": "Steckbriefaufgaben",
       "content": "Steckbriefaufgaben sind sehr anstrengend"
     }
+  ],
+  "user": [
+    {
+      "name": "Max Mustermann"
+    },
+    {
+      "name": "Erika Mustermann"
+    },
+    {
+      "name": "Hans Mustermann"
+    }
   ]
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { DashboardIcon, ReaderIcon, TableIcon } from "@radix-ui/react-icons";
 
 type RailProps = {
@@ -9,26 +9,24 @@ type RailProps = {
 };
 
 export const Rail = ({ className }: RailProps) => {
-  const params = useParams();
-  const activeLink = params.slug;
+  const pathname = usePathname();
 
-  console.log(activeLink);
   return (
     <div className={`${className} flex flex-col min-h-screen border-r`}>
       <div
         className={`${
-          activeLink === "dashboard" ? "bg-slate-100" : ""
+          pathname === "/teacher" ? "bg-slate-100" : ""
         } p-2 m-2 rounded`}
       >
         {" "}
-        <Link href="./teacher/dashboard">
+        <Link href="./teacher">
           {" "}
           <DashboardIcon />
         </Link>{" "}
       </div>
       <div
         className={`${
-          activeLink === "sessions" ? "bg-slate-100" : ""
+          pathname === "/teacher/sessions" ? "bg-slate-100" : ""
         } p-2 m-2 rounded`}
       >
         {" "}
@@ -39,7 +37,7 @@ export const Rail = ({ className }: RailProps) => {
       </div>
       <div
         className={`${
-          activeLink === "students" ? "bg-slate-100" : ""
+          pathname === "/teacher/students" ? "bg-slate-100" : ""
         } p-2 m-2 rounded`}
       >
         {" "}

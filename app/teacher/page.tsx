@@ -3,4 +3,3 @@ const teacher = () => {
 };
 
 export default teacher;
-2

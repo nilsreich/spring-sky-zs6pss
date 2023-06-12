@@ -1,5 +1,4 @@
 import { Rail } from "@/components/teacher/Rail";
-import { Sidebar } from "@/components/teacher/Sidebar";
 import { Topbar } from "@/components/Topbar";
 
 export default function TeacherLayout({
@@ -12,7 +11,6 @@ export default function TeacherLayout({
       <Topbar />
       <div className="flex">
         <Rail />
-        <Sidebar />
         <div>{children}</div>
       </div>
     </div>
