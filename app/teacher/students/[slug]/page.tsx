@@ -1,4 +1,4 @@
-import { StudentSidebar } from "@/components/teacher/StudentsSidebar";
+import { StudentSidebar } from "@/components/teacher/StudentSidebar";
 
 export default function Page({ params }: { params: { slug: string } }) {
 

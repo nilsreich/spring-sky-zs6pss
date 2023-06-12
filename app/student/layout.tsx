@@ -7,10 +7,10 @@ export default function StudentLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div>
-      <Topbar />
-      <div className="flex">
-        <Sidebar className="border-r min-h-screen" />
+    <div className="flex flex-col h-screen">
+      <Topbar className="border-b"/>
+      <div className="flex grow">
+        <Sidebar className="border-r h-full " />
         <div>{children}</div>
       </div>
     </div>

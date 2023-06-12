@@ -1,5 +1,11 @@
 import Link from "next/link";
 
-export const Topbar = () => {
-  return <Link href="./">Logout</Link>;
+type TopbarProps = {
+  className?: string;
+};
+
+export const Topbar = ({ className }: TopbarProps) => {
+  return <div className={className}>
+    <Link href="./">Logout</Link>;
+  </div>
 };

@@ -12,7 +12,7 @@ export const Rail = ({ className }: RailProps) => {
   const pathname = usePathname();
 
   return (
-    <div className={`${className} flex flex-col min-h-screen border-r`}>
+    <div className={`${className} flex flex-col`}>
       <div
         className={`${
           pathname === "/teacher" ? "bg-slate-100" : ""

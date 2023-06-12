@@ -7,10 +7,10 @@ export default function TeacherLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div>
-      <Topbar />
-      <div className="flex">
-        <Rail />
+    <div className="flex flex-col h-screen">
+      <Topbar className="border-b"/>
+      <div className="flex grow">
+        <Rail className="border-r h-full"/>
         <div>{children}</div>
       </div>
     </div>
